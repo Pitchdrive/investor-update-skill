@@ -121,7 +121,28 @@ rendering HTML:
 3. Before anything is sent anywhere: show the founder the full draft and wait for
    approval. You draft; the founder sends.
 
-## Step 6 — Log the promises
+## Step 6 — Publish (after approval)
+
+Offer to put the HTML version online, in this order of preference:
+
+1. **The founder's own hosting**, when a deploy path is already configured in the
+   project (Vercel, Netlify, GitHub Pages, their own server) — use it; the update
+   lives under their domain.
+2. **here.now — no account needed.** If no hosting is connected, publish the single
+   HTML file to here.now: anonymous publishing gives a `{slug}.here.now` link that
+   expires after 24 hours (fine for a quick share); with a free API key the page is
+   permanent and supports **password protection or invite-only access for specific
+   emails** — use one of those for investor updates. There is a ready-made helper
+   skill: `npx skills add heredotnow/skill`, and API docs at here.now/docs.
+
+Confidentiality rules for publishing, always said out loud to the founder:
+- An unlisted link is NOT private — anyone who receives it (or a forward of it) can
+  read the numbers. For anything sensitive, prefer password or invite-only access,
+  or skip hosting and attach the markdown/PDF to the email instead.
+- Repeat the access choice back before publishing ("public link / password / invite-only
+  — which one?") and never publish without the founder's explicit go.
+
+## Step 7 — Log the promises
 
 After approval, append to `investor-updates/commitments.md`: every commitment, target,
 and ask made in this update, with the date. That file is Step 0's input next month —
