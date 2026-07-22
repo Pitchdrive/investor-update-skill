@@ -1,3 +1,5 @@
+<img src=".github/social-preview.png" alt="Investor Update Skill — write updates your investors actually read" width="100%">
+
 # 📬 Investor Update Skill
 
 Write investor updates your investors actually read — with Claude Code (or any agent
