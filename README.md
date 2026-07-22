@@ -26,8 +26,9 @@ in an afternoon — ideally with the numbers pulled straight from your tools.
   single-file HTML page with anchor navigation and metric callouts, ready for any
   static host — or just send the markdown.
 - **Publishes it too** — to your own hosting (Vercel, Netlify, GitHub Pages) when
-  connected, or to [here.now](https://here.now) with **no account needed**, including
-  password-protected or invite-only links for confidential updates.
+  connected, or to [here.now](https://here.now): a free API key gets you a permanent
+  page with password-protected or invite-only access — the right modes for a
+  confidential update.
 - **Never invents a number.** Missing data is stated as missing. Fabricated metrics
   end founder-investor relationships; this skill refuses to produce them.
 

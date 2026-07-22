@@ -1,6 +1,7 @@
 # Brightloop — Investor Update, April 2026
 
-*(Fictional company, fictional numbers — this example shows the target structure and tone.)*
+*(Fictional company, fictional numbers — this shows the target structure and tone at
+normal-month length; heavy months run longer.)*
 
 ## 01 · CEO update
 
@@ -52,9 +53,10 @@ inside the onboarding epic.
 
 ## 05 · Team
 
-9 people → 10 on May 1 (founding AE, ex-Datadog). No other hires planned until the
-self-serve funnel proves it can carry CAC — we'd rather show the model works at 10
-people than explain a 15-person burn at the next raise.
+9 people → 10 on May 1 (founding AE, ex-Datadog). One more hire is planned — a
+founding AE for DACH next quarter (see the ask below) — and beyond that we freeze
+until the self-serve funnel proves it can carry CAC. We'd rather show the model works
+at 11 people than explain a 15-person burn at the next raise.
 
 ## 07 · Strategy
 
