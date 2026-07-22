@@ -18,8 +18,10 @@ in an afternoon — ideally with the numbers pulled straight from your tools.
 - **Writes in your voice**, following an 8-section structure refined from updates VCs
   rate highly: CEO letter → financials → product → velocity → team → culture →
   strategy → forecast & asks.
-- **Renders a shareable page**: clean single-file HTML with anchor navigation and
-  metric callouts, ready for any static host — or just send the markdown.
+- **Renders a shareable page in YOUR brand**: it fetches your website, picks up your
+  logo, colors and font (you confirm before it's used), and produces a clean
+  single-file HTML page with anchor navigation and metric callouts, ready for any
+  static host — or just send the markdown.
 - **Never invents a number.** Missing data is stated as missing. Fabricated metrics
   end founder-investor relationships; this skill refuses to produce them.
 
@@ -30,7 +32,7 @@ in an afternoon — ideally with the numbers pulled straight from your tools.
 ```bash
 mkdir -p .claude/skills/investor-update
 curl -o .claude/skills/investor-update/SKILL.md \
-  https://raw.githubusercontent.com/OWNER/REPO/main/SKILL.md
+  https://raw.githubusercontent.com/Pitchdrive/investor-update-skill/main/SKILL.md
 ```
 
 Then in Claude Code, just ask:
