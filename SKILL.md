@@ -36,11 +36,13 @@ platform's connector list first):
 
 | Data | Typical sources | Fallback |
 |---|---|---|
-| Revenue, MRR/ARR, new logos | Stripe, Chargebee, Polar, HubSpot/attio CRM | founder pastes monthly numbers |
-| P&L, opex, cash, runway | QuickBooks, Xero, a finance sheet (CSV/Sheets) | founder pastes cash + burn |
-| Product/engineering velocity | Linear, GitHub/GitLab (issues, merged PRs, releases) | founder summarizes shipped work |
-| Usage/ops KPIs | analytics (PostHog, Amplitude, GA), internal dashboards | founder pastes 2–4 north-star numbers |
-| Team | HRIS or just the founder | headcount now / next month |
+| Revenue, MRR/ARR, billing | Stripe, Chargebee, Paddle, Polar, Mollie | founder pastes monthly numbers |
+| Pipeline, new logos, win rate | HubSpot, Salesforce, Attio, Pipedrive | founder pastes deal counts |
+| P&L, opex, margins | QuickBooks, Xero, Exact Online, Yuki, Silverfin, Odoo, NetSuite, or a finance sheet (CSV/Sheets) | founder pastes P&L lines |
+| Cash & runway | Mercury, Brex, Qonto, Ramp, Agicap, bank export (CSV) | founder pastes cash + burn |
+| Product/engineering velocity | Linear, GitHub/GitLab, Jira (issues, merged PRs, releases) | founder summarizes shipped work |
+| Usage/ops KPIs | analytics (PostHog, Amplitude, GA), Metabase/internal dashboards | founder pastes 2–4 north-star numbers |
+| Team | HRIS (Personio, HiBob) or just the founder | headcount now / next month |
 
 For each source that is NOT connected, offer the founder a choice:
 - **Connect it** (point them to their platform's MCP/connector setup for that tool), or

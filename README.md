@@ -10,8 +10,9 @@ in an afternoon — ideally with the numbers pulled straight from your tools.
 
 ## What it does
 
-- **Pulls your KPIs** from connected tools (Stripe, your CRM, QuickBooks/Xero, Linear,
-  GitHub, analytics) when available — and asks you for exactly the missing numbers,
+- **Pulls your KPIs** from connected tools when available — billing (Stripe, Paddle,
+  Mollie…), CRM (HubSpot, Salesforce, Attio…), accounting (QuickBooks, Xero, Exact,
+  Yuki, Silverfin…), banking (Mercury, Qonto…), plus Linear/GitHub and analytics — and asks you for exactly the missing numbers,
   in one message, when not.
 - **Tracks your promises.** Every commitment and ask is logged; next month's update
   opens by revisiting them. That follow-through is what builds investor trust.
@@ -46,7 +47,7 @@ skill body into your agent's custom instructions.
 
 The skill checks what's already connected and offers manual entry for the rest.
 To get automatic numbers, connect MCP servers for the tools you use — e.g. Stripe,
-HubSpot, Xero, Linear, GitHub. See your platform's connector/MCP documentation; in
+HubSpot, Salesforce, QuickBooks, Xero, Exact Online, Mercury, Linear, GitHub. See your platform's connector/MCP documentation; in
 Claude Code these are configured with `claude mcp add`.
 
 No connectors? Fine — the skill asks for a compact list of numbers and does the rest.
