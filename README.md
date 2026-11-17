@@ -39,15 +39,18 @@ in an afternoon — ideally with the numbers pulled straight from your tools.
 ```bash
 # Pinned to a reviewed commit, so what you install cannot change underneath you.
 REV=29ad5c74f4d025d0711809638f0ce1f732eabd66
+SUM=a0c3a1217d4eaefb87b45256170b2d4f1854382e12094f1b1abac401a289c0af
 mkdir -p .claude/skills/investor-update
-curl -fsSL -o .claude/skills/investor-update/SKILL.md \
+curl -fsSL -o SKILL.md.download \
   "https://raw.githubusercontent.com/Pitchdrive/investor-update-skill/$REV/SKILL.md"
-echo "a0c3a1217d4eaefb87b45256170b2d4f1854382e12094f1b1abac401a289c0af  .claude/skills/investor-update/SKILL.md" \
-  | shasum -a 256 -c
+GOT=$( (sha256sum SKILL.md.download 2>/dev/null || shasum -a 256 SKILL.md.download) | cut -d' ' -f1)
+if [ "$GOT" = "$SUM" ]; then mv SKILL.md.download .claude/skills/investor-update/SKILL.md && echo "Installed, checksum OK"
+else rm -f SKILL.md.download; echo "Checksum mismatch, nothing installed" >&2; fi
 ```
 
-The last line must print `OK`. To upgrade, read the newer `SKILL.md` on GitHub first, then
-take its commit SHA and checksum (`shasum -a 256 SKILL.md`) from the version you reviewed.
+The skill is only installed when the checksum matches. To upgrade, read the newer `SKILL.md`
+on GitHub first, then take its commit SHA and checksum (`sha256sum SKILL.md`) from the version
+you reviewed.
 
 Then in Claude Code, just ask:
 
